@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Joke</title>
+    </head>
+
+    <body>
+        <p th:text=${joke.votes}></p><br>
+        <p th:text=${joke.joke}></p>
+
+        <a th:href="@{'/downvote/' + ${joke.id}}">Downvote</a>
+        <a th:href="@{'/upvote/' + ${joke.id}}">Upvote</a>
+
+    </body>
+</html>
